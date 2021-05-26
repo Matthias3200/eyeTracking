@@ -1,7 +1,9 @@
 project (pupiltracker)
 cmake_minimum_required(VERSION 2.8)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 
+
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules")
+FIND_PACKAGE(OpenCV REQUIRED)
 set(CMAKE_DEBUG_POSTFIX "d")
 
 if (NOT MSVC)
